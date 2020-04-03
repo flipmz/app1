@@ -3,11 +3,11 @@ import logo from "./logo.svg";
 import "./App.css";
 
 
-const MyCoolButton = () => {
+const MyCoolButton = (props) => {
   return (
         <div>  
-          <span>Minii gaihaltai tovch</span><br/>
-          <input className="MyCoolButton" type="button" value="clickme!"/>
+          <span>{props.tovchNer ? props.tovchNer: "Hello button"}</span><br/>
+          <input className="MyCoolButton" type="button" value={props.tovchText}/>
         </div>
       );
 };
@@ -18,7 +18,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-       <MyCoolButton/>
+       <MyCoolButton tovchNer="Hi button from App" tovchText="Magic Click"/>
+       <MyCoolButton />
       </header>
     </div>
   );
