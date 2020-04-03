@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 export const MyCoolButton = props => {
-  const clickHandler = () => alert("Коммент:" + props.comment);
+  const [count, setCount] = useState(0);
+
+  const clickHandler = () => {
+    alert("Коммент:" + props.comment);
+
+}
   return (
     <div>
       <span>{props.tovchNer ? props.tovchNer : "Hello button"}</span>
@@ -10,7 +15,7 @@ export const MyCoolButton = props => {
         className="MyCoolButton"
         type="button"
         onClick={clickHandler}
-        value={props.text ? props.text : "redundant button"}
+        value={props.text ? `${count}] ${props.text}` : "clickmu"`};
       />
     </div>
   );

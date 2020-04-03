@@ -11,7 +11,6 @@ export class Comment extends Component {
   bichih = e => {
     this.setState({ comment: e.target.value });
   };
-
   render() {
     return (
       <div>
