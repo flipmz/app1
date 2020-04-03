@@ -5,8 +5,7 @@ export const MyCoolButton = props => {
 
   const clickHandler = () => {
     alert("Коммент:" + props.comment);
-
-}
+  };
   return (
     <div>
       <span>{props.tovchNer ? props.tovchNer : "Hello button"}</span>
@@ -15,7 +14,7 @@ export const MyCoolButton = props => {
         className="MyCoolButton"
         type="button"
         onClick={clickHandler}
-        value={props.text ? `${count}] ${props.text}` : "clickmu"`};
+        value={props.text ? `${count}] ${props.text}` : "clickmu"}
       />
     </div>
   );
