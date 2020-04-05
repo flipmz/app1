@@ -1,20 +1,22 @@
 import React, { Component } from "react";
+
 import { MyCoolButton } from "../MyCoolButton";
-export class Comment extends Component {
+
+class Comment extends Component {
   constructor() {
     super();
     this.state = {
       publisher: "",
-      comment: ""
+      comment: "",
     };
   }
-  bichih = e => {
+  bichih = (e) => {
     this.setState({ comment: e.target.value });
   };
   render() {
     return (
       <div>
-        <div>{this.state.comment}</div>
+        <div className="CoolText">{this.state.comment}</div>
         <div>Зохиолч: {this.props.zohiogch}</div>
         <textarea onChange={this.bichih}></textarea>
         <MyCoolButton
@@ -26,3 +28,4 @@ export class Comment extends Component {
     );
   }
 }
+export default Comment;

@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./style.css";
 
-import { Comment } from "../Comment";
+import Comment from "../Comment";
 
 function App() {
   return (
