@@ -21,7 +21,7 @@ class Comment extends Component {
         <textarea onChange={this.bichih}></textarea>
         <MyCoolButton
           comment={this.state.comment}
-          tovchNer="inda comment comp:Коментоо үнэнээр нь бич"
+          tovchNer="in the comment comp:Коментоо үнэнээр нь бич"
           text="Хадгал"
         />
       </div>
